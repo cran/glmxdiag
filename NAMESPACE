@@ -1,0 +1,30 @@
+importFrom(stats, fitted, predict, residuals, AIC, terms, update, update.formula,
+	        coef, cooks.distance, hatvalues, influence, nobs, dbinom, density, 
+		dnorm, dpois, model.matrix, pbeta, pbinom, pgamma, pnbinom,
+                ppois, qnorm, qqnorm, qqline, quantile, runif, formula, glm.fit, lm.fit,  
+		pnorm, sigma, family, as.formula, deviance, lm.wfit, sd, loess.smooth,
+		lm, vcov)
+importFrom(utils, setTxtProgressBar, txtProgressBar)
+importFrom(graphics, abline, layout, par, points, segments, text, lines, legend, axis)
+importFrom(VGAM, hatvaluesvlm, pinv.gaussian, pbetabinom, residuals)
+export(linkLin, variableOut, influenceDiag, cookDist, DFbeta, leverage, Qresiduals, avplot, funComp, devAnalysis, varCheck)
+
+S3method(linkLin, glm)
+S3method(linkLin, betareg)
+S3method(linkLin, vglm)
+S3method(influenceDiag, glm)
+S3method(influenceDiag, betareg)
+S3method(influenceDiag, vglm)
+S3method(Qresiduals, glm)
+S3method(Qresiduals, betareg)
+S3method(Qresiduals, vglm)
+S3method(Qresiduals, negbin)
+S3method(avplot_fun, glm)
+S3method(avplot_fun, vglm)
+S3method(avplot_fun, betareg)
+S3method(varCheck, glm)
+S3method(varCheck, vglm)
+S3method(varCheck, betareg)
+S3method(devAnalysis, glm)
+S3method(devAnalysis, vglm)
+S3method(devAnalysis, betareg)
